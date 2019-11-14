@@ -6,7 +6,7 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
+    <title><%: Page.Title %>- iParkPMC </title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -14,7 +14,92 @@
 
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <style>
+        .container-fluid {
+            overflow: hidden;
+        }
 
+        body { padding: 0px; }
+            .page-header,
+        .page-header h1 {margin-top:0;}
+
+        .footer {
+          position: fixed;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          background-color: peru;
+          color: white;
+          text-align: left;
+        }
+        .nav.navbar-nav li a {
+        color: 	#FFFFFF !important; 
+        }
+        .nav.navbar-nav li a:hover { 
+        color: 	black !important;
+         }
+        .navbar-custom {
+            background-color: #8B4513;
+        }
+
+/* change the brand and text color */
+    .navbar-custom .navbar-brand,
+    .navbar-custom .navbar-text {
+    /*color: rgba(255,255,255,.8);*/
+    color:white;
+    }
+
+    /* change the link color */
+    /*.navbar-custom .navbar-nav .nav-link {
+    color: white;
+    /*color: rgba(255,255,255,.5);*/
+    }*/
+
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link{
+    color: darkblue;
+}
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff;
+}
+/*background-color:#8B4513*/
+/* for dropdown only - change the color of droodown */
+.navbar-custom .dropdown-menu {
+    background-color: #8B4513;
+}
+.navbar-custom .dropdown-item {
+    color: #ffffff;
+}
+.navbar-custom .dropdown-item:hover{
+    color: blue;
+    background-color: pink;
+}
+.navbar-custom .dropdown-item:focus {
+    /*color: #333333;
+    background-color: rgba(255,255,255,.5);*/
+    color: blue;
+    background-color: pink;
+}
+        .auto-style3 {
+            float: left;
+            height: 24px;
+            padding: 15px 15px;
+            font-size: 18px;
+            line-height: 20px;
+        }
+
+        .navbar-nav li:hover > ul.dropdown-menu {
+    display: block;
+}
+.dropdown-submenu {
+    position:relative;
+}
+.dropdown-submenu>.dropdown-menu {
+    top:0;
+    left:100%;
+    margin-top:-6px;
+}
+    </style>
 </head>
 <body>
     <form runat="server">
@@ -34,11 +119,31 @@
                 <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
                 <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
                 <asp:ScriptReference Name="WebFormsBundle" />
+
                 <%--Site Scripts--%>
             </Scripts>
+        
         </asp:ScriptManager>
+        <div class="container-fluid" style="background-color:peru">
+            <header>
+                <div class="row flex-nowrap justify = content-between align-items-center">
+                    <div class="col-4 text-center" style="background-color:peru">
+                        <a class="blog-header-logo text-dark" style="color:white"> <strong style="font-size:x-large; font">Land Acquisition Information System - Thane Region</strong></a>
+                    </div>
+                </div>
+                <%--<div class="col-4 d-flex justify = content-end allign-items-end">--%>
+                    <div class="col-4 d-flex" style="text-align:right; color:white">
+                 <%--   <asp:LinkButton ID="linkLogin" runat="server">Login</asp:LinkButton>--%>
+                    <asp:Label ID="lblUser" runat="server"></asp:Label>
+                    <asp:LinkButton ID="linkLogOut" runat="server" Visible="false" PostBackUrl="~/UserLogin.aspx">Logout</asp:LinkButton>
+                   <%-- <asp:LinkButton ID="linkReg" runat="server">Registration</asp:LinkButton>--%>
+                </div>
+            </header>
+        </div>
 
-        <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar navbar-custom" style="margin-bottom:0px;">
+            <%--style="background-color:#8B4513; color:white"--%>
+           <%-- <div class="navbar navbar-default navbar-fixed-top">--%>
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -46,32 +151,226 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">Application name</a>
+                    <a class="auto-style3" runat="server" href="#"></a>
                 </div>
-                <div class="navbar-collapse collapse">
+                <div class="navbar-collapse collapse" style="color:white">
+                    
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
-                        <li><a runat="server" href="~/Contact">Contact</a></li>
-                        <li><a runat="server" href="#">Master</a>
-                            <ul>
-                                <li><a runat="server" href="~/Masters/Village2">Village</a></li>
+                        
+                         <% if (IsAdmin == 1) { %>
+                             <li><a runat="server" href="~/User/HOIndex">Home</a></li>
+                         <% }%>
+                         <% if (IsAdmin == 2) { %>
+                            <li><a runat="server" href="~/User/SOIndex">Home</a></li>
+                         <% }%>
+                         <% if (IsAdmin == 3) { %>
+                            <li><a runat="server" href="~/User/SOIndex2">Home</a></li>
+                          <% }%>
+                          <% if (IsAdmin == 4) { %>
+                            <li><a runat="server" href="~/User/SolicitorIndex">Home</a></li>
+                          <% }%>
+                          <% if (IsAdmin == 5) { %>
+                            <li><a runat="server" href="~/User/ClientIndex">Home</a></li>
+                          <% }%>
+                         <% if (IsAdmin == 6) { %>
+                            <li><a runat="server" href="~/User/AccountsIndex">Home</a></li>
+                          <% }%>
+
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" runat="server" href="#">Project Information <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a runat="server" href="~/GeneralInfo/GeneralInfo">General Information</a></li>
+                                <li><a runat="server" href="~/GeneralInfo/ProjectPlan">Project Plan-Layout</a></li>
+                                <li><a runat="server" href="~/GeneralInfo/VillageInfo">Village Wise Acquisition</a></li>
+                               <%-- <li><a runat="server" href="#">Survey No Details</a></li>--%>
+                           </ul>
+                            
+                        </li>
+                
+                      <% if (IsAdmin == 1) { %>
+
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" runat="server" href="#">Master<span class="caret"></span></a>
+                           <ul class="dropdown-menu">
+                                <li><a runat="server" href="~/Masters/village2">Village Name</a></li>
+                               <li><a runat="server" href="#">Client Details</a></li>
+                               <li><a runat="server" href="#">Family Details - Holders</a></li>
+                               <li><a runat="server" href="~/Masters/DocumentMaster">Document - Deeds Format</a></li>
+                               <li><a runat="server" href="~/Masters/CheckListMaster.aspx">Document Check List</a></li>
+                               <li><a runat="server" href="~/Masters/frmMutationRegister">Mutation Entry</a></li>
+                                <li><a runat="server" href="~/Masters/frmFinalData">Mutation Final Data</a></li>
+                               <li><a runat="server" href="~/HO/UserMaster">User Details</a></li>
+                               <li><a runat="server" href="~/Solicitor/SolicitorApproveDoc">Test</a></li>
+                            </ul>
+                     
+                       
+                        </li>
+                     <% }%>
+                       
+              <ul class="nav navbar-nav">
+                <li class="menu-item dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Reports & Queries<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li class="menu-item dropdown dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Land Releated Information</a>
+                            <ul class="dropdown-menu">
+                                <li class="menu-item ">
+                                    <a href="~/Reports/RptVillageMaster" runat="server">Village Information</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="~/Reports/ReportTest" runat="server">Family Details</a>
+                                   <%-- <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="#">Link 3</a>
+                                        </li>
+                                    </ul>--%>
+                                </li>
+                                                           
+                                <li class="menu-item ">
+                                    <a href="~/User/HOIndex" runat="server">Survey Number List</a>
+                                </li>
+                                <li class="menu-item ">
+                                    <a href="~/LandRelatedDocument.aspx" runat="server">Register of Holding-8A</a>
+                                </li>
+                               
+                                 <li class="menu-item ">
+                                    <a href="#">Records of Right -7/12</a>
+                                </li>
+                                <li class="menu-item ">
+                                    <a href="~/Reports/MutationRegister" runat="server">Mutation Register Extract</a>
+                                </li>
+                                <li class="menu-item ">
+                                    <a href="~/Reports/GetClassOfLandOccupant" runat="server">Class of Land - Occupant Class</a>
+                                </li>
+                                 <li class="menu-item ">
+                                    <a href="~/DBFFile/readDBFFile" runat="server">DB File</a>
+                                </li>
+                               
+                                <%--  --%>
                             </ul>
                         </li>
-                        <li><a runat="server" href="~/User/login">Login</a></li>
+
+                        <li class="menu-item dropdown dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Payment Releated Information</a>
+                            <ul class="dropdown-menu">
+                                <li class="menu-item ">
+                                    <a href="~/Client/ViewPaymentDetails" runat="server">View Payment Details</a>
+                                </li>
+                                <%--<li class="menu-item">
+                                    <a href="#">Daliy Weekly Monthly Payments</a>
+                                   
+                                </li>
+                                <li class="menu-item ">
+                                    <a href="#">Family Wise Payment</a>
+                                </li>--%>
+                                </ul>
+                            </li>
+
+                        <li class="menu-item dropdown dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Acquisition Status</a>
+                            <ul class="dropdown-menu">
+                                <li class="menu-item ">
+                                    <a href="~/Reports/SummaryOfTitleSearchReport" runat="server">Summary of Title Search</a>
+                                </li>
+                                <li class="menu-item ">
+                                    <a href="~/Reports/SummaryOfDocumentExecutionReport" runat="server">Summary of Document Execution</a>
+                                </li>
+                                <li class="menu-item ">
+                                    <a href="~/Reports/GetDocumentStatus" runat="server">Get Document Status</a>
+                                </li>
+                              
+                                <%--<li class="menu-item ">
+                                    <a href="~/Reports/MutationSearchReport" runat="server">Final Mutation</a>
+                                </li>--%>
+                                 <li class="menu-item ">
+                                    <a href="#">Final Report</a>
+                                </li>
+                                </ul>
+                            </li>
+
+                        <li class="menu-item dropdown dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Miscellaneous</a>
+                            <ul class="dropdown-menu">
+                                <li class="menu-item ">
+                                    <a href="#">Inward Outward Register</a>
+                                </li>
+                                
+                        <%--  --%>
                     </ul>
+
+                </li>
+
+                        <li class="menu-item ">
+                                        <a href="~/Reports/MutationSearchReport" runat="server">Mutation Search Report - Survey No.</a>
+                                    </li>
+            </ul>
+
+                        <%--<li><a runat="server" href="~/User/login">Login</a></li>--%>
+                    </ul>
+
+                        <%-- <li class="menu-item dropdown dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Reports</a>
+                            <ul class="dropdown-menu">
+                                <li class="menu-item ">
+                                    <a href="~/Reports/HTMLReports/HTMLPmtDetDayWeekMonth" runat="server">Payment details</a>
+                                </li>
+                               
+                                <li class="menu-item ">
+                                    <a href="~/Reports/HTMLReports/HTMLPmtDetFamilyWise" runat="server">Familywise Payment</a>
+                                </li>
+                               
+                                <li class="menu-item ">
+                                    <a href="~/Reports/HTMLReports/HTMLPmtDetVillageWise" runat="server">Villagewise Payment</a>
+                                </li>
+                            
+                                 <li class="menu-item ">
+                                    <a href="~/Reports/HTMLReports/HTMLRecordOfRights_7_12" runat="server">Record of Rights 7/12</a>
+                                </li>
+
+                                 <li class="menu-item ">
+                                    <a href="~/Reports/HTMLReports/HTMLRegisterofHoldings_8A" runat="server">Register of Holdings 8A</a>
+                                </li>
+                                
+                                </ul>
+                            </li>--%>
+
+                         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" runat="server" href="#">Templates<span class="caret"></span></a>
+                           <ul class="dropdown-menu">
+                                <li><a runat="server" href="GeneralInfo/Templates/करारनामा%20-%20Development%20Agreement.docx">करारनामा</a></li>
+                            
+                               <li><a runat="server" href="GeneralInfo/Templates/कायम%20खरेदीखत-Saledeed.docx">कायम खरेदीखत</a></li>
+                        
+                               <li><a runat="server" href="GeneralInfo/Templates/कुलमुखत्यार%20पत्र-GPA.docx">कुलमुखत्यार पत्र </a></li>
+                                                                                     
+                               <li><a runat="server" href="GeneralInfo/Templates/विसार%20%20पावती%20-%20Visar%20Pavti.docx">विसार पावती</a></li>
+
+                               <li><a runat="server" href="GeneralInfo/Templates/शपथपत्र%20व%20बंधपत्र-shapath%20and%20Bandh%20Patra.docx">शपथपत्र व बंधपत्र</a></li>
+                              
+                               <li><a runat="server" href="GeneralInfo/Templates/संमती%20पत्र%20-%20SammatiPatra.docx">संमती पत्र</a></li>
+                           
+                               <li><a runat="server" href="GeneralInfo/Templates/हमीपत्र-Hamipatra.docx">हमीपत्र</a></li>
+
+                               <li><a runat="server" href="GeneralInfo/Templates/रजिस्टीर%20साठेकरार-RegSatheKarar.docx">रजिस्टर साठेकरार</a></li>
+                               <li><a runat="server" href="~/Reports/GenerateDocumentTemplate.aspx">First Page</a></li>
+                               <%--<a href="Reports/GenerateDocumentTemplate.aspx">Reports/GenerateDocumentTemplate.aspx</a>--%>
+                               <%--<a href="GeneralInfo/Templates/रजिस्टीर%20साठेकरार-RegSatheKarar.docx">GeneralInfo/Templates/रजिस्टीर साठेकरार-RegSatheKarar.docx</a>--%>
+                            </ul>
+                       
+                       
+                        </li>
                 </div>
             </div>
         </div>
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
+               <%-- <asp:Label ID="UserName" runat="server" Text="Label"></asp:Label>--%>
             </asp:ContentPlaceHolder>
-            <hr />
-            <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
-            </footer>
+         
+            
         </div>
-
+        <footer class ="footer">
+               <p>&copy; <%--Framework Scripts--%>- Copy Right 2019</p>
+             
+            </footer>
     </form>
 </body>
 </html>

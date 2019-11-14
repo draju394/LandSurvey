@@ -1,0 +1,38 @@
+user - super 
+password - Apt@2018
+
+Test Site
+elabprem-001-site22.btempurl.com
+user - super 
+password - Apt@2018
+
+lokaview
+http://elablite-001-site19.atempurl.com/?page=1
+user - super 
+password - Apt@2018
+
+
+Digital Parliament 
+Web site (Desktop Browser) : https://www.dparliament.com
+Azure app : DigitalParliamentWeb
+
+Admin Portal : https://admin.dparliament.com
+Azure app :  DPAdminWebsite
+
+Mobile Web site :  https://www.m.dparliament.com 
+Azure app :  DigitalParliamentMobileWeb
+
+FTP details for mobile site
+ftps://waws-prod-pn1-007.ftp.azurewebsites.windows.net/site/wwwroot
+digitalparliamentmobileweb\DPMsite
+Test@1234
+
+Code Branch : AdminWeb
+
+Lokavyuha
+
+Parinay Fuke App
+User - 9890037859
+Password - Rajendra@123 
+Role - Visitor 
+

@@ -1,0 +1,92 @@
+<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Village2.aspx.cs" Inherits="LandSurvey.Masters.Village2" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+        body{padding-top:70px}
+    </style>
+  <script src="../Scripts/Validation.js" type="text/javascript"></script>  
+    <script  type="text/javascript">  
+        function Validation() {  
+            if (Required('<%=txtVillageCode.ClientID%>', 'Village Code'))  
+                if (Required('<%=txtVillageName.ClientID%>', 'Village Name'))  
+                    if (Required('<%=txtVIllageMarathiName.ClientID%>', 'Village Marathi Name '))  
+                        return true;  
+            return false;  
+        }  
+    </script>  
+    <%--<script type="text/javascript" src="https://www.google.com/jsapi?key=AIzaSyBUxpJ7O01OY_EhyczKp2kHiuQFZ7S5SvM"> </script>--%>
+    <%--<script type="text/javascript" src="https://translation.googleapis.com/language/translate/v2?key=AIzaSyBUxpJ7O01OY_EhyczKp2kHiuQFZ7S5SvM"> </script>--%>
+    <%--"https://translation.googleapis.com/language/translate/v2?key=YOUR_API_KEY";--%>
+    <script type="text/javascript" src="https://www.google.com/jsapi"> </script>
+    <script type="text/javascript">
+        google.load("elements", "1", {
+            packages: "transliteration"
+        });
+ 
+        //function onLoad() {
+        //    var options = {
+        //        sourceLanguage: google.elements.transliteration.LanguageCode.ENGLISH,
+        //        [destinationLanguage: google.elements.transliteration.LanguageCode.MARATHI], // available option English, Bengali, Marathi, Malayalam etc.
+        //        shortcutKey: 'ctrl+g',
+        //        transliterationEnabled: true
+        //    };
+
+         function onLoad() {
+            var options = {
+                sourceLanguage:
+                google.elements.transliteration.LanguageCode.ENGLISH,
+                destinationLanguage:
+                [google.elements.transliteration.LanguageCode.MARATHI],
+                shortcutKey: 'ctrl+e',
+                transliterationEnabled: true
+            };
+            var control = new google.elements.transliteration.TransliterationControl(options);
+            control.makeTransliteratable(['txtVIllageMarathiName']);
+        }
+        google.setOnLoadCallback(onLoad);
+ 
+    </script>
+    <asp:Panel ID="Panel2" runat="server" Height="133px">
+        <asp:Panel ID="Panel3" runat="server" Height="87px">
+            <asp:GridView ID="grdVillage" runat="server">
+            </asp:GridView>
+        </asp:Panel>
+        <br />
+        <asp:Panel ID="Panel1" runat="server">
+            <table style="width:100%;">
+                <tr>
+                    <td style="width: 209px">&nbsp;</td>
+                    <td class="modal-sm" style="width: 226px">Village Code:</td>
+                    <td>
+                        <asp:TextBox ID="txtVillageCode" runat="server"></asp:TextBox>
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="width: 209px">&nbsp;</td>
+                    <td class="modal-sm" style="width: 226px">Village Name:</td>
+                    <td>
+                        <asp:TextBox ID="txtVillageName" runat="server"></asp:TextBox>
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="width: 209px">&nbsp;</td>
+                    <td class="modal-sm" style="width: 226px">Village Marathi Name:</td>
+                    <td>
+                        <asp:TextBox ID="txtVIllageMarathiName" runat="server"></asp:TextBox>
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="width: 209px">&nbsp;</td>
+                    <td class="modal-sm" style="width: 226px">&nbsp;</td>
+                    <td style="margin-left: 40px">
+                        <asp:Button ID="btnSave" runat="server" Text="Save" OnClick="btnSave_Click" OnClientClick="javascript:return Validation();" />
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+        </asp:Panel>
+    </asp:Panel>
+</asp:Content>

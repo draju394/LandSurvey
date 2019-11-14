@@ -102,6 +102,108 @@ namespace LandSurvey.DAL
 
             return _PValid;
         }
+
+        public DataSet getVillageData()
+        {
+            try
+            {
+                ds = FillData("select row_number() over() as srno, t.* from (select villageid, villagecode, villagename, villagemname " +
+                   " from village order by villageid desc ) t ", "village");
+                if (ds.Tables[0].Rows.Count > 0)
+                {
+                    DataRow row = ds.Tables[0].NewRow();
+                    row["villagename"] = "Please Select Village Name";
+                    ds.Tables[0].Rows.InsertAt(row, 0);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return ds;
+        }
+
+        public DataSet getVillageName()
+        {
+            try
+            {
+                ds = FillData("select villageid, villagecode, villagename, villagemname " +
+                   " from village order by villageid desc ", "village");
+                if (ds.Tables[0].Rows.Count > 0)
+                {
+                    DataRow row = ds.Tables[0].NewRow();
+                    row["villagemname"] = "Please Select Villiage Name";
+                    ds.Tables[0].Rows.InsertAt(row, 0);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return ds;
+        }
+
+        public DataSet getAllVillageData()
+        {
+            try
+            {
+                ds = FillData("select villageid, villagecode, villagename, villagemname " +
+                   " from village order by villageid desc ", "village");
+                if (ds.Tables[0].Rows.Count > 0)
+                {
+                    //DataRow row = ds.Tables[0].NewRow();
+                    //row["villagemname"] = "Please Select Villiage Name";
+                    //ds.Tables[0].Rows.InsertAt(row, 0);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return ds;
+        }
+
+
+        public string getVillageNameMarathi(string VillageCode)
+        {
+            string VillageMarathiName = null;
+            using (NpgsqlCommand cmd = new NpgsqlCommand())
+            {
+                openConnection();
+                NpgsqlDataReader conReader;
+                conReader = null;
+
+                //cmd.CommandText = "select familyno from familydetails where docno= '" + DocNo + "' group by familyno";
+                cmd.CommandText = " select villagemname from village where villagecode = '" + VillageCode + "' ";
+                cmd.Connection = conn;
+                cmd.Transaction = transaction;
+                cmd.CommandType = CommandType.Text;
+                try
+                {
+                    conReader = cmd.ExecuteReader();
+                    while (conReader.Read())
+                    {
+                        VillageMarathiName = Convert.ToString(conReader.GetValue(0));
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    errorTransaction();
+                    throw new ApplicationException("Something wrong happened in the Vilage Module :", ex);
+                }
+                finally
+                {
+                    conReader.Close();
+                    closeConnection();
+                }
+
+                return VillageMarathiName;
+            }
+        }
         //
     }
     

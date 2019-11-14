@@ -44,7 +44,37 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\..\..\SEZ-Thane\POPAjxtool\WebApplication26\WebApplication26\bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="EnCode">
+      <HintPath>..\..\AswiniSalunkhe\16072019\Landsurvey_180719\LandSurvey2\LandSurvey\LandSurvey\bin\EnCode.dll</HintPath>
+    </Reference>
+    <Reference Include="ExportHTMLToPDF">
+      <HintPath>..\..\NewDeveloper\14102019\NewDevelopment\bin\ExportHTMLToPDF.dll</HintPath>
+    </Reference>
+    <Reference Include="GenCode128">
+      <HintPath>..\..\AswiniSalunkhe\16072019\Landsurvey_180719\LandSurvey2\LandSurvey\LandSurvey\bin\GenCode128.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip.Reduced">
+      <HintPath>..\..\..\Test\ZIP\DownloadMultipleFiles\Bin\Ionic.Zip.Reduced.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.1, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.1\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xmlworker">
+      <HintPath>..\..\AswiniSalunkhe\16072019\Landsurvey_180719\LandSurvey2\LandSurvey\LandSurvey\bin\itextsharp.xmlworker.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Azure.KeyVault.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Azure.KeyVault.Core.1.0.0\lib\net40\Microsoft.Azure.KeyVault.Core.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.WindowsAzure.Configuration, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.WindowsAzure.ConfigurationManager.3.2.3\lib\net40\Microsoft.WindowsAzure.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Storage, Version=9.1.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WindowsAzure.Storage.9.1.1\lib\net45\Microsoft.WindowsAzure.Storage.dll</HintPath>
+    </Reference>
     <Reference Include="Mono.Security">
       <HintPath>..\..\..\SETU\References\postgres\Mono.Security.dll</HintPath>
     </Reference>
@@ -53,6 +83,60 @@
     </Reference>
     <Reference Include="Npgsql">
       <HintPath>..\..\..\SETU\References\postgres\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="NReco.PdfGenerator">
+      <HintPath>..\..\NewDeveloper\14102019\NewDevelopment\bin\NReco.PdfGenerator.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Barcode, Version=3.2.0.14040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.Office.4.3.1\lib\net40\Spire.Barcode.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Common, Version=2.2.16.19040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.Office.4.3.1\lib\net40\Spire.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.DataExport, Version=4.1.9.19040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.Office.4.3.1\lib\net40\Spire.DataExport.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.DataExport.ResourceMgr, Version=2.1.0.19040, Culture=neutral, PublicKeyToken=4bc1500157862925, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.Office.4.3.1\lib\net40\Spire.DataExport.ResourceMgr.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Doc, Version=7.2.8.19040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.Office.4.3.1\lib\net40\Spire.Doc.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.DocViewer.Forms, Version=4.1.10.19040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.Office.4.3.1\lib\net40\Spire.DocViewer.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.License, Version=1.3.7.40, Culture=neutral, PublicKeyToken=b1144360237c8b3f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.Office.4.3.1\lib\net40\Spire.License.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Pdf, Version=5.2.17.19040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.Office.4.3.1\lib\net40\Spire.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.PdfViewer.Forms, Version=4.2.7.19040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.Office.4.3.1\lib\net40\Spire.PdfViewer.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Presentation, Version=4.2.6.19040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.Office.4.3.1\lib\net40\Spire.Presentation.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.XLS, Version=9.2.16.19040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.Office.4.3.1\lib\net40\Spire.XLS.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.DocIO.Base, Version=17.1460.0.32, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\ASP.NET\17.1.0.32\Assemblies\4.6\Syncfusion.DocIO.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.DocToPDFConverter.Base, Version=17.1460.0.32, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\ASP.NET\17.1.0.32\Assemblies\4.6\Syncfusion.DocToPDFConverter.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.EJ, Version=17.1460.0.32, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.EJ.Export, Version=17.1460.0.32, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\ASP.NET MVC\17.1.0.32\Assemblies\4.6\Syncfusion.EJ.Export.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.EJ.Web, Version=17.1460.0.32, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Pdf.Base, Version=17.1460.0.32, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\ASP.NET MVC\17.1.0.32\Assemblies\4.6\Syncfusion.Pdf.Base.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
@@ -115,15 +199,32 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="Accounts\PaymentNote.aspx" />
+    <Content Include="Accounts\PaymentNoteList.aspx" />
+    <Content Include="Client\ClientApproval.aspx" />
+    <Content Include="Client\ClientViewPayment.aspx" />
+    <Content Include="Client\FindDocumentStatus.aspx" />
+    <Content Include="Client\ViewPaymentDetails.aspx" />
+    <Content Include="comingsoon.aspx" />
     <Content Include="Contact.aspx" />
+    <Content Include="Content\bootstrap-datetimepicker.css" />
+    <Content Include="Content\bootstrap-datetimepicker.min.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\ej.web.all.min.css" />
+    <Content Include="Content\ej.widgets.core.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="DAL\DataService.asmx" />
+    <Content Include="DBFFile\readDBFFile.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="Execuation\DocExecution.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="GeneralInfo\GeneralInfo.aspx" />
+    <Content Include="GeneralInfo\ProjectPlan.aspx" />
+    <Content Include="GeneralInfo\VillageInfo.aspx" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -133,16 +234,164 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Docs\DPTemplate.docx" />
+    <Content Include="Docs\PNTemplate.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Docs\MRTemplate.docx" />
+    <Content Include="Docs\FRTemplate.docx" />
+    <Content Include="Connected Services\AzureStorage1\ConnectedService.json" />
+    <Content Include="DAL\gridHandler.ashx" />
+    <Content Include="HO\addUser.aspx" />
+    <Content Include="HO\HOClarificationDoc.aspx" />
+    <Content Include="HO\HODocExecution.aspx" />
+    <Content Include="HO\HODocFromSO.aspx" />
+    <Content Include="HO\HODocPlanning.aspx" />
+    <Content Include="HO\HODOCSiteOne.aspx" />
+    <Content Include="HO\HOFinalSearch.aspx" />
+    <Content Include="HO\HOPrimaryTS.aspx" />
+    <Content Include="HO\HOSolicitorDoc.aspx" />
+    <Content Include="HO\UserMaster.aspx" />
+    <Content Include="Images\DocPlan1.jpg" />
+    <Content Include="Images\DocPlan2.png" />
+    <Content Include="Images\DocReceived.png" />
+    <Content Include="Images\DocSearch.png" />
+    <Content Include="Images\DocSearch2.png" />
+    <Content Include="Images\DocumentExecution.png" />
+    <Content Include="Images\FinalMutation.png" />
+    <Content Include="Images\FinalSearch.png" />
+    <Content Include="Images\IndianRs.png" />
+    <Content Include="Images\InwardOutWard.png" />
+    <Content Include="Images\Layout1.pdf" />
+    <Content Include="HO\saveFiles.ashx" />
+    <Content Include="App_Data\ARIALUNI.TTF" />
+    <Content Include="LandRelatedDocument.aspx" />
+    <Content Include="Masters\frmMutationRegister.aspx" />
+    <Content Include="OTPMaster.Master" />
+    <Content Include="GeneralInfo\Templates\FirstPage-Templates.docx" />
+    <Content Include="7-12PDF\11-1-a.pdf" />
+    <Content Include="7-12PDF\11-1-b.pdf" />
+    <Content Include="7-12PDF\11-2.pdf" />
+    <Content Include="7-12PDF\11-3.pdf" />
+    <Content Include="7-12PDF\11-4.pdf" />
+    <Content Include="7-12PDF\14-6.pdf" />
+    <Content Include="7-12PDF\14-9.pdf" />
+    <Content Include="7-12PDF\15-10.pdf" />
+    <Content Include="7-12PDF\15-6.pdf" />
+    <Content Include="7-12PDF\15-9.pdf" />
+    <Content Include="7-12PDF\35-1.pdf" />
+    <Content Include="7-12PDF\35-10.pdf" />
+    <Content Include="7-12PDF\35-11.pdf" />
+    <Content Include="7-12PDF\35-12.pdf" />
+    <Content Include="7-12PDF\35-13.pdf" />
+    <Content Include="7-12PDF\35-14.pdf" />
+    <Content Include="7-12PDF\35-2.pdf" />
+    <Content Include="7-12PDF\35-3.pdf" />
+    <Content Include="7-12PDF\35-4-a.pdf" />
+    <Content Include="7-12PDF\35-4.pdf" />
+    <Content Include="7-12PDF\35-5.pdf" />
+    <Content Include="7-12PDF\35-6.pdf" />
+    <Content Include="7-12PDF\35-7.pdf" />
+    <Content Include="7-12PDF\35-8.pdf" />
+    <Content Include="7-12PDF\35-9.pdf" />
+    <Content Include="7-12PDF\36-1.pdf" />
+    <Content Include="7-12PDF\36-2.pdf" />
+    <Content Include="7-12PDF\36-3.pdf" />
+    <Content Include="7-12PDF\36-4.pdf" />
+    <Content Include="7-12PDF\36-5.pdf" />
+    <Content Include="7-12PDF\36-6.pdf" />
+    <Content Include="7-12PDF\36-7-a.pdf" />
+    <Content Include="7-12PDF\36-7-b.pdf" />
+    <Content Include="7-12PDF\36-7-c.pdf" />
+    <Content Include="7-12PDF\36-8.pdf" />
+    <Content Include="7-12PDF\36-9.pdf" />
+    <Content Include="7-12PDF\37-1.pdf" />
+    <Content Include="7-12PDF\37-2.pdf" />
+    <Content Include="7-12PDF\37-3-2.pdf" />
+    <Content Include="7-12PDF\37-3-a.pdf" />
+    <Content Include="7-12PDF\37-4.pdf" />
+    <Content Include="7-12PDF\37-5.pdf" />
+    <Content Include="7-12PDF\37-6.pdf" />
+    <Content Include="7-12PDF\37-7.pdf" />
+    <Content Include="7-12PDF\57-1.pdf" />
+    <Content Include="7-12PDF\57-2.pdf" />
+    <Content Include="7-12PDF\59-1.pdf" />
+    <Content Include="7-12PDF\59-2.pdf" />
+    <Content Include="7-12PDF\59-3.pdf" />
+    <Content Include="7-12PDF\59-4.pdf" />
+    <Content Include="7-12PDF\59-5.pdf" />
+    <Content Include="7-12PDF\59-6.pdf" />
+    <Content Include="7-12PDF\59-7-a.pdf" />
+    <Content Include="7-12PDF\59-7-b-1.pdf" />
+    <Content Include="7-12PDF\59-7-b-2.pdf" />
+    <Content Include="7-12PDF\60-1.pdf" />
+    <Content Include="7-12PDF\60-2.pdf" />
+    <Content Include="7-12PDF\60-3.pdf" />
+    <Content Include="7-12PDF\60-4-a.pdf" />
+    <Content Include="7-12PDF\60-4-b.pdf" />
+    <Content Include="GeneralInfo\Templates\करारनामा - Development Agreement.docx" />
+    <Content Include="GeneralInfo\Templates\कायम खरेदीखत-Saledeed.docx" />
+    <Content Include="GeneralInfo\Templates\कुलमुखत्यार पत्र-GPA.docx" />
+    <Content Include="GeneralInfo\Templates\रजिस्टीर साठेकरार-RegSatheKarar.docx" />
+    <Content Include="GeneralInfo\Templates\विसार  पावती - Visar Pavti.docx" />
+    <Content Include="GeneralInfo\Templates\शपथपत्र व बंधपत्र-shapath and Bandh Patra.docx" />
+    <Content Include="GeneralInfo\Templates\संमती पत्र - SammatiPatra.docx" />
+    <Content Include="GeneralInfo\Templates\हमीपत्र-Hamipatra.docx" />
+    <Content Include="Images\Layout.pdf" />
+    <Content Include="ExportHandler.ashx" />
+    <Content Include="DBFFile\A5313760301001.dbf" />
+    <None Include="Properties\PublishProfiles\LandSurveySEZThane - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\LandSurveySEZThane - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\LandSurveySEZThane - Web Deploy1.pubxml" />
+    <None Include="Properties\PublishProfiles\sezthane08 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Images\main1.png" />
+    <Content Include="Images\main2.jpg" />
+    <Content Include="Images\Solicitor.png" />
+    <Content Include="Images\underConstruction.png" />
+    <Content Include="login2.aspx" />
+    <Content Include="Masters\CheckListMaster.aspx" />
+    <Content Include="Masters\DocumentMaster.aspx" />
+    <Content Include="Masters\frmDocumentStatus.aspx" />
+    <Content Include="Masters\frmFinalData.aspx" />
+    <Content Include="Masters\frmInwardOutwardReg.aspx" />
+    <Content Include="Masters\frmMutationFinal.aspx" />
     <Content Include="Masters\village.aspx" />
+    <Content Include="Masters\village1.aspx" />
     <Content Include="Masters\Village2.aspx" />
+    <Content Include="Payment\TSPayment.aspx" />
+    <Content Include="Reports\GenerateDocumentTemplate.aspx" />
+    <Content Include="Reports\GetClassOfLandOccupant.aspx" />
+    <Content Include="Reports\GetDocumentStatus.aspx" />
+    <Content Include="Reports\HTMLDocumentStatus.aspx" />
+    <Content Include="Reports\HTMLFinalData.aspx" />
+    <Content Include="Reports\HTMLInwardOutwardReg.aspx" />
+    <Content Include="Reports\HTMLMutationFinal.aspx" />
+    <Content Include="Reports\MutationRegister.aspx" />
+    <Content Include="Reports\MutationSearchReport.aspx" />
+    <Content Include="Reports\ReportTest.aspx" />
+    <Content Include="Reports\RptVillageMaster.aspx" />
+    <Content Include="Reports\SummaryOfDocumentExecutionReport.aspx" />
+    <Content Include="Reports\SummaryOfTitleSearchReport.aspx" />
+    <Content Include="Scripts\bootstrap-datetimepicker.js" />
+    <Content Include="Scripts\bootstrap-datetimepicker.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\ej.grid.min.js" />
+    <Content Include="Scripts\ej.unobtrusive.min.js" />
+    <Content Include="Scripts\ej.web.all.min.js" />
+    <Content Include="Scripts\ej.webform.min.js" />
+    <Content Include="Scripts\ExportToPDF.js" />
+    <Content Include="Scripts\jquery-2.1.3.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\jsrender.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\Validation.js" />
     <Content Include="Scripts\WebForms\DetailsView.js" />
     <Content Include="Scripts\WebForms\Focus.js" />
     <Content Include="Scripts\WebForms\GridView.js" />
@@ -164,14 +413,61 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="SearchLandRelatedDocument.aspx" />
     <Content Include="Site.Master" />
-    <Content Include="User\login.aspx" />
+    <Content Include="Solicitor\SolicitorApproval.aspx" />
+    <Content Include="Solicitor\SolicitorApprovalList.aspx" />
+    <Content Include="Solicitor\SolicitorApprovalNew.aspx" />
+    <Content Include="Solicitor\SolicitorApproveDoc.aspx" />
+    <Content Include="SOOne\SO1LandDocument.aspx" />
+    <Content Include="SOOne\SO1OtherDocument.aspx" />
+    <Content Include="SOOne\SOLandDocuments.aspx" />
+    <Content Include="SOOne\SOSubmitChecklist.aspx" />
+    <Content Include="SOOne\SOSubmitDocuments.aspx" />
+    <Content Include="SOTwo\SO2DocExecution2.aspx" />
+    <Content Include="SOTwo\SO2DocumentExecution.aspx" />
+    <Content Include="SOTwo\SO2EditCheckList.aspx" />
+    <Content Include="SOTwo\SO2LandDocuments.aspx" />
+    <Content Include="SOTwo\SO2OtherDocument.aspx" />
+    <Content Include="SOTwo\SO2UploadChecklist.aspx" />
+    <Content Include="SOTwo\SO2UploadDocuments.aspx" />
+    <Content Include="TitleSearch\CheckList.aspx" />
+    <Content Include="TitleSearch\frmTest.aspx" />
+    <Content Include="TitleSearch\TitleSearch11.aspx" />
+    <Content Include="TitleSearch\TitleSearchSO.aspx" />
+    <Content Include="TitleSearch\TitleSearch.aspx" />
+    <Content Include="TitleSearch\TitleSearchSO11.aspx" />
+    <Content Include="TitleSearch\wordFileOpen.aspx" />
+    <Content Include="UserLogin.aspx" />
+    <Content Include="User\AccountsIndex.aspx" />
+    <Content Include="User\ClientIndex.aspx" />
+    <Content Include="User\HOIndex.aspx" />
+    <Content Include="User\otpAuthentication.aspx" />
+    <Content Include="User\SOIndex.aspx" />
+    <Content Include="User\SOIndex2.aspx" />
+    <Content Include="User\SolicitorIndex.aspx" />
     <Content Include="ViewSwitcher.ascx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Bundle.config" />
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Accounts\PaymentNote.aspx.cs">
+      <DependentUpon>PaymentNote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounts\PaymentNote.aspx.designer.cs">
+      <DependentUpon>PaymentNote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accounts\PaymentNoteList.aspx.cs">
+      <DependentUpon>PaymentNoteList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounts\PaymentNoteList.aspx.designer.cs">
+      <DependentUpon>PaymentNoteList.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -181,6 +477,41 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Client\ClientApproval.aspx.cs">
+      <DependentUpon>ClientApproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Client\ClientApproval.aspx.designer.cs">
+      <DependentUpon>ClientApproval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Client\ClientViewPayment.aspx.cs">
+      <DependentUpon>ClientViewPayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Client\ClientViewPayment.aspx.designer.cs">
+      <DependentUpon>ClientViewPayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Client\FindDocumentStatus.aspx.cs">
+      <DependentUpon>FindDocumentStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Client\FindDocumentStatus.aspx.designer.cs">
+      <DependentUpon>FindDocumentStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Client\ViewPaymentDetails.aspx.cs">
+      <DependentUpon>ViewPaymentDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Client\ViewPaymentDetails.aspx.designer.cs">
+      <DependentUpon>ViewPaymentDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="comingsoon.aspx.cs">
+      <DependentUpon>comingsoon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="comingsoon.aspx.designer.cs">
+      <DependentUpon>comingsoon.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -188,9 +519,53 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DAL\CommonFunction.cs" />
+    <Compile Include="DAL\DataService.asmx.cs">
+      <DependentUpon>DataService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DAL\dbCheckList.cs" />
+    <Compile Include="DAL\dbChkListTran.cs" />
+    <Compile Include="DAL\dbClient.cs" />
+    <Compile Include="DAL\dbCommonFunctions.cs" />
     <Compile Include="DAL\dbConnection.cs" />
+    <Compile Include="DAL\dbDistrict.cs" />
+    <Compile Include="DAL\dbDocument.cs" />
+    <Compile Include="DAL\dbDocumentMaster.cs" />
+    <Compile Include="DAL\dbDocumentStatus.cs" />
+    <Compile Include="DAL\dbFamilyDetails.cs" />
+    <Compile Include="DAL\dbFamilyMaster.cs" />
+    <Compile Include="DAL\dbFamilySurvey.cs" />
+    <Compile Include="DAL\dbFileNo.cs" />
+    <Compile Include="DAL\dbFinalData.cs" />
+    <Compile Include="DAL\dbInwardOutwardReg.cs" />
+    <Compile Include="DAL\dbMutationFinal.cs" />
+    <Compile Include="DAL\dbMutationRegister.cs" />
+    <Compile Include="DAL\dbMutationRegister1.cs" />
+    <Compile Include="DAL\dbPayment.cs" />
+    <Compile Include="DAL\dbPaymentNote.cs" />
+    <Compile Include="DAL\dbPurchaser.cs" />
+    <Compile Include="DAL\dbReports.cs" />
+    <Compile Include="DAL\dbReports1.cs" />
+    <Compile Include="DAL\dbTaluka.cs" />
     <Compile Include="DAL\dbUser.cs" />
     <Compile Include="DAL\dbVillage.cs" />
+    <Compile Include="DAL\District.cs" />
+    <Compile Include="DAL\familyDetails.cs" />
+    <Compile Include="DAL\familyMaster.cs" />
+    <Compile Include="DAL\familySurvey.cs" />
+    <Compile Include="DAL\gridHandler.ashx.cs">
+      <DependentUpon>gridHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Taluka.cs" />
+    <Compile Include="DAL\VIllage.cs" />
+    <Compile Include="DBFFile\readDBFFile.aspx.cs">
+      <DependentUpon>readDBFFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DBFFile\readDBFFile.aspx.designer.cs">
+      <DependentUpon>readDBFFile.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -198,8 +573,172 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Execuation\DocExecution.aspx.cs">
+      <DependentUpon>DocExecution.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Execuation\DocExecution.aspx.designer.cs">
+      <DependentUpon>DocExecution.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralInfo\GeneralInfo.aspx.cs">
+      <DependentUpon>GeneralInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GeneralInfo\GeneralInfo.aspx.designer.cs">
+      <DependentUpon>GeneralInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralInfo\ProjectPlan.aspx.cs">
+      <DependentUpon>ProjectPlan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GeneralInfo\ProjectPlan.aspx.designer.cs">
+      <DependentUpon>ProjectPlan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralInfo\VillageInfo.aspx.cs">
+      <DependentUpon>VillageInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GeneralInfo\VillageInfo.aspx.designer.cs">
+      <DependentUpon>VillageInfo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HO\addUser.aspx.cs">
+      <DependentUpon>addUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HO\addUser.aspx.designer.cs">
+      <DependentUpon>addUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HO\HOClarificationDoc.aspx.cs">
+      <DependentUpon>HOClarificationDoc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HO\HOClarificationDoc.aspx.designer.cs">
+      <DependentUpon>HOClarificationDoc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HO\HODocExecution.aspx.cs">
+      <DependentUpon>HODocExecution.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HO\HODocExecution.aspx.designer.cs">
+      <DependentUpon>HODocExecution.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HO\HODocFromSO.aspx.cs">
+      <DependentUpon>HODocFromSO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HO\HODocFromSO.aspx.designer.cs">
+      <DependentUpon>HODocFromSO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HO\HODocPlanning.aspx.cs">
+      <DependentUpon>HODocPlanning.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HO\HODocPlanning.aspx.designer.cs">
+      <DependentUpon>HODocPlanning.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HO\HODOCSiteOne.aspx.cs">
+      <DependentUpon>HODOCSiteOne.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HO\HODOCSiteOne.aspx.designer.cs">
+      <DependentUpon>HODOCSiteOne.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HO\HOFinalSearch.aspx.cs">
+      <DependentUpon>HOFinalSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HO\HOFinalSearch.aspx.designer.cs">
+      <DependentUpon>HOFinalSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HO\HOPrimaryTS.aspx.cs">
+      <DependentUpon>HOPrimaryTS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HO\HOPrimaryTS.aspx.designer.cs">
+      <DependentUpon>HOPrimaryTS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HO\HOSolicitorDoc.aspx.cs">
+      <DependentUpon>HOSolicitorDoc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HO\HOSolicitorDoc.aspx.designer.cs">
+      <DependentUpon>HOSolicitorDoc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HO\saveFiles.ashx.cs">
+      <DependentUpon>saveFiles.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="HO\UserMaster.aspx.cs">
+      <DependentUpon>UserMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HO\UserMaster.aspx.designer.cs">
+      <DependentUpon>UserMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LandRelatedDocument.aspx.cs">
+      <DependentUpon>LandRelatedDocument.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LandRelatedDocument.aspx.designer.cs">
+      <DependentUpon>LandRelatedDocument.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login2.aspx.cs">
+      <DependentUpon>login2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login2.aspx.designer.cs">
+      <DependentUpon>login2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\CheckListMaster.aspx.cs">
+      <DependentUpon>CheckListMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\CheckListMaster.aspx.designer.cs">
+      <DependentUpon>CheckListMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\DocumentMaster.aspx.cs">
+      <DependentUpon>DocumentMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\DocumentMaster.aspx.designer.cs">
+      <DependentUpon>DocumentMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\frmDocumentStatus.aspx.cs">
+      <DependentUpon>frmDocumentStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\frmDocumentStatus.aspx.designer.cs">
+      <DependentUpon>frmDocumentStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\frmFinalData.aspx.cs">
+      <DependentUpon>frmFinalData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\frmFinalData.aspx.designer.cs">
+      <DependentUpon>frmFinalData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\frmInwardOutwardReg.aspx.cs">
+      <DependentUpon>frmInwardOutwardReg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\frmInwardOutwardReg.aspx.designer.cs">
+      <DependentUpon>frmInwardOutwardReg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\frmMutationFinal.aspx.cs">
+      <DependentUpon>frmMutationFinal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\frmMutationFinal.aspx.designer.cs">
+      <DependentUpon>frmMutationFinal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\frmMutationRegister.aspx.cs">
+      <DependentUpon>frmMutationRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\frmMutationRegister.aspx.designer.cs">
+      <DependentUpon>frmMutationRegister.aspx</DependentUpon>
     </Compile>
     <Compile Include="Masters\village.aspx.cs">
       <DependentUpon>village.aspx</DependentUpon>
@@ -208,6 +747,13 @@
     <Compile Include="Masters\village.aspx.designer.cs">
       <DependentUpon>village.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Masters\village1.aspx.cs">
+      <DependentUpon>village1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\village1.aspx.designer.cs">
+      <DependentUpon>village1.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Masters\Village2.aspx.cs">
       <DependentUpon>Village2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -215,7 +761,119 @@
     <Compile Include="Masters\Village2.aspx.designer.cs">
       <DependentUpon>Village2.aspx</DependentUpon>
     </Compile>
+    <Compile Include="OTPMaster.Master.cs">
+      <DependentUpon>OTPMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OTPMaster.Master.designer.cs">
+      <DependentUpon>OTPMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\TSPayment.aspx.cs">
+      <DependentUpon>TSPayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment\TSPayment.aspx.designer.cs">
+      <DependentUpon>TSPayment.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\GenerateDocumentTemplate.aspx.cs">
+      <DependentUpon>GenerateDocumentTemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\GenerateDocumentTemplate.aspx.designer.cs">
+      <DependentUpon>GenerateDocumentTemplate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\GetClassOfLandOccupant.aspx.cs">
+      <DependentUpon>GetClassOfLandOccupant.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\GetClassOfLandOccupant.aspx.designer.cs">
+      <DependentUpon>GetClassOfLandOccupant.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\GetDocumentStatus.aspx.cs">
+      <DependentUpon>GetDocumentStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\GetDocumentStatus.aspx.designer.cs">
+      <DependentUpon>GetDocumentStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\HTMLDocumentStatus.aspx.cs">
+      <DependentUpon>HTMLDocumentStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\HTMLDocumentStatus.aspx.designer.cs">
+      <DependentUpon>HTMLDocumentStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\HTMLFinalData.aspx.cs">
+      <DependentUpon>HTMLFinalData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\HTMLFinalData.aspx.designer.cs">
+      <DependentUpon>HTMLFinalData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\HTMLInwardOutwardReg.aspx.cs">
+      <DependentUpon>HTMLInwardOutwardReg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\HTMLInwardOutwardReg.aspx.designer.cs">
+      <DependentUpon>HTMLInwardOutwardReg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\HTMLMutationFinal.aspx.cs">
+      <DependentUpon>HTMLMutationFinal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\HTMLMutationFinal.aspx.designer.cs">
+      <DependentUpon>HTMLMutationFinal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\MutationRegister.aspx.cs">
+      <DependentUpon>MutationRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\MutationRegister.aspx.designer.cs">
+      <DependentUpon>MutationRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\MutationSearchReport.aspx.cs">
+      <DependentUpon>MutationSearchReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\MutationSearchReport.aspx.designer.cs">
+      <DependentUpon>MutationSearchReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportTest.aspx.cs">
+      <DependentUpon>ReportTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportTest.aspx.designer.cs">
+      <DependentUpon>ReportTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\RptVillageMaster.aspx.cs">
+      <DependentUpon>RptVillageMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\RptVillageMaster.aspx.designer.cs">
+      <DependentUpon>RptVillageMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SummaryOfDocumentExecutionReport.aspx.cs">
+      <DependentUpon>SummaryOfDocumentExecutionReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\SummaryOfDocumentExecutionReport.aspx.designer.cs">
+      <DependentUpon>SummaryOfDocumentExecutionReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SummaryOfTitleSearchReport.aspx.cs">
+      <DependentUpon>SummaryOfTitleSearchReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\SummaryOfTitleSearchReport.aspx.designer.cs">
+      <DependentUpon>SummaryOfTitleSearchReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchLandRelatedDocument.aspx.cs">
+      <DependentUpon>SearchLandRelatedDocument.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchLandRelatedDocument.aspx.designer.cs">
+      <DependentUpon>SearchLandRelatedDocument.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -230,12 +888,222 @@
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
-    <Compile Include="User\login.aspx.cs">
-      <DependentUpon>login.aspx</DependentUpon>
+    <Compile Include="Solicitor\SolicitorApproval.aspx.cs">
+      <DependentUpon>SolicitorApproval.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="User\login.aspx.designer.cs">
-      <DependentUpon>login.aspx</DependentUpon>
+    <Compile Include="Solicitor\SolicitorApproval.aspx.designer.cs">
+      <DependentUpon>SolicitorApproval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Solicitor\SolicitorApprovalList.aspx.cs">
+      <DependentUpon>SolicitorApprovalList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Solicitor\SolicitorApprovalList.aspx.designer.cs">
+      <DependentUpon>SolicitorApprovalList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Solicitor\SolicitorApprovalNew.aspx.cs">
+      <DependentUpon>SolicitorApprovalNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Solicitor\SolicitorApprovalNew.aspx.designer.cs">
+      <DependentUpon>SolicitorApprovalNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Solicitor\SolicitorApproveDoc.aspx.cs">
+      <DependentUpon>SolicitorApproveDoc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Solicitor\SolicitorApproveDoc.aspx.designer.cs">
+      <DependentUpon>SolicitorApproveDoc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SOOne\SO1LandDocument.aspx.cs">
+      <DependentUpon>SO1LandDocument.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SOOne\SO1LandDocument.aspx.designer.cs">
+      <DependentUpon>SO1LandDocument.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SOOne\SO1OtherDocument.aspx.cs">
+      <DependentUpon>SO1OtherDocument.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SOOne\SO1OtherDocument.aspx.designer.cs">
+      <DependentUpon>SO1OtherDocument.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SOOne\SOLandDocuments.aspx.cs">
+      <DependentUpon>SOLandDocuments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SOOne\SOLandDocuments.aspx.designer.cs">
+      <DependentUpon>SOLandDocuments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SOOne\SOSubmitChecklist.aspx.cs">
+      <DependentUpon>SOSubmitChecklist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SOOne\SOSubmitChecklist.aspx.designer.cs">
+      <DependentUpon>SOSubmitChecklist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SOOne\SOSubmitDocuments.aspx.cs">
+      <DependentUpon>SOSubmitDocuments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SOOne\SOSubmitDocuments.aspx.designer.cs">
+      <DependentUpon>SOSubmitDocuments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SOTwo\SO2DocExecution2.aspx.cs">
+      <DependentUpon>SO2DocExecution2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SOTwo\SO2DocExecution2.aspx.designer.cs">
+      <DependentUpon>SO2DocExecution2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SOTwo\SO2DocumentExecution.aspx.cs">
+      <DependentUpon>SO2DocumentExecution.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SOTwo\SO2DocumentExecution.aspx.designer.cs">
+      <DependentUpon>SO2DocumentExecution.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SOTwo\SO2EditCheckList.aspx.cs">
+      <DependentUpon>SO2EditCheckList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SOTwo\SO2EditCheckList.aspx.designer.cs">
+      <DependentUpon>SO2EditCheckList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SOTwo\SO2LandDocuments.aspx.cs">
+      <DependentUpon>SO2LandDocuments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SOTwo\SO2LandDocuments.aspx.designer.cs">
+      <DependentUpon>SO2LandDocuments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SOTwo\SO2OtherDocument.aspx.cs">
+      <DependentUpon>SO2OtherDocument.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SOTwo\SO2OtherDocument.aspx.designer.cs">
+      <DependentUpon>SO2OtherDocument.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SOTwo\SO2UploadChecklist.aspx.cs">
+      <DependentUpon>SO2UploadChecklist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SOTwo\SO2UploadChecklist.aspx.designer.cs">
+      <DependentUpon>SO2UploadChecklist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SOTwo\SO2UploadDocuments.aspx.cs">
+      <DependentUpon>SO2UploadDocuments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SOTwo\SO2UploadDocuments.aspx.designer.cs">
+      <DependentUpon>SO2UploadDocuments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TitleSearch\CheckList.aspx.cs">
+      <DependentUpon>CheckList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TitleSearch\CheckList.aspx.designer.cs">
+      <DependentUpon>CheckList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TitleSearch\frmTest.aspx.cs">
+      <DependentUpon>frmTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TitleSearch\frmTest.aspx.designer.cs">
+      <DependentUpon>frmTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TitleSearch\TitleSearch11.aspx.cs">
+      <DependentUpon>TitleSearch11.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TitleSearch\TitleSearch11.aspx.designer.cs">
+      <DependentUpon>TitleSearch11.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TitleSearch\TitleSearchSO.aspx.cs">
+      <DependentUpon>TitleSearchSO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TitleSearch\TitleSearchSO.aspx.designer.cs">
+      <DependentUpon>TitleSearchSO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TitleSearch\TitleSearch.aspx.cs">
+      <DependentUpon>TitleSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TitleSearch\TitleSearch.aspx.designer.cs">
+      <DependentUpon>TitleSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TitleSearch\TitleSearchSO11.aspx.cs">
+      <DependentUpon>TitleSearchSO11.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TitleSearch\TitleSearchSO11.aspx.designer.cs">
+      <DependentUpon>TitleSearchSO11.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TitleSearch\wordFileOpen.aspx.cs">
+      <DependentUpon>wordFileOpen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TitleSearch\wordFileOpen.aspx.designer.cs">
+      <DependentUpon>wordFileOpen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserLogin.aspx.cs">
+      <DependentUpon>UserLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLogin.aspx.designer.cs">
+      <DependentUpon>UserLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\AccountsIndex.aspx.cs">
+      <DependentUpon>AccountsIndex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\AccountsIndex.aspx.designer.cs">
+      <DependentUpon>AccountsIndex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\ClientIndex.aspx.cs">
+      <DependentUpon>ClientIndex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\ClientIndex.aspx.designer.cs">
+      <DependentUpon>ClientIndex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\HOIndex.aspx.cs">
+      <DependentUpon>HOIndex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\HOIndex.aspx.designer.cs">
+      <DependentUpon>HOIndex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\otpAuthentication.aspx.cs">
+      <DependentUpon>otpAuthentication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\otpAuthentication.aspx.designer.cs">
+      <DependentUpon>otpAuthentication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\SOIndex.aspx.cs">
+      <DependentUpon>SOIndex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\SOIndex.aspx.designer.cs">
+      <DependentUpon>SOIndex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\SOIndex2.aspx.cs">
+      <DependentUpon>SOIndex2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\SOIndex2.aspx.designer.cs">
+      <DependentUpon>SOIndex2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\SolicitorIndex.aspx.cs">
+      <DependentUpon>SolicitorIndex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\SolicitorIndex.aspx.designer.cs">
+      <DependentUpon>SolicitorIndex.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
@@ -246,7 +1114,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
+    <Folder Include="8A\" />
+    <Folder Include="Documents1\" />
+    <Folder Include="Reports\HTMLReports\" />
+    <Folder Include="TempFile\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -258,6 +1129,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
